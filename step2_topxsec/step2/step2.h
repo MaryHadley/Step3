@@ -27,6 +27,11 @@ public :
    Int_t           fCurrent; //!current Tree number in a TChain
 
 // Fixed size dimensions of array or collections stored in the TTree if any.
+   Int_t           atLeast3BJets;
+   Int_t           atLeast2BJets;
+   Int_t           atLeast1BJet;
+   Int_t           atMost5Jets;
+   vector<double>  *v_DCSV_allJets_DCSV_Ordered;
    Int_t           isTraining;
    Float_t         xsecEff; //this is the weight actually!! so (Lumi * xsec)/nEvents, but keeping the naming the same to be consistent with Jangbae
    // Declaration of leaf types
